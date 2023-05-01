@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Array Html_tag </title>
+</head>
+
+
+
+<body>
+    <!-- jyare vadhre contanin hoy to script ma class name thi get karavanu -->
+    <h1 id="he" class="he1">hello</h1>
+    <h1 id="he" class="he1">hello</h1>
+    <h1 id="he" class="he1">hello</h1>
+    <h1 id="he" class="he1">hello</h1>
+    <h1 id="he" class="he1">hello</h1>
+    <h1 id="he" class="he1">hello</h1>
+
+    <div class="he">Hello</div>
+    <div class="he">Hemant</div>
+    <div class="he">Gadagi</div>
+
+
+
+    <script>
+        h1_tag = document.getElementsByClassName('he1')
+        div_tag = document.getElementsByClassName('he')
+
+        console.log(h1_tag)
+
+        // h1_tag.style.color = 'red'
+        document.write(h1_tag.length)
+        for (x = 0; x < h1_tag.length; x++) {
+            h1_tag[x].style.color = 'red'
+        }
+
+        // div_tag.style.color = 'green'
+
+        for (y = 0; y < div_tag.length; y++) {
+            div_tag[y].style.color = 'blue'
+        }
+    </script>
+
+</body>
+
+</html>
